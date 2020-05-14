@@ -180,3 +180,21 @@ canvas{
 .ex{
 	background-color: #0F0F0F;
 }
+
+@-webkit-keyframes animate-positive{
+    from { width: 0% ; }
+}
+@keyframes animate-positive{
+    from { width: 0% ; }
+}
+
+
+.progress{
+	animation-name: animate-positive !important;
+	animation-duration: 6s !important;
+	animation-delay: 1000s;
+}
+
+.ani{
+	animation-delay: 0s !important;
+}

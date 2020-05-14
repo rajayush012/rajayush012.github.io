@@ -73,3 +73,21 @@ console.log(c);
 
 drawC();
 
+var globalSkill = false;
+
+var waypoint = new Waypoint({
+	element: document.getElementById('sboxed'),
+	handler: function(direction) {
+		if(globalSkill===false){
+			$('.progress').addClass('ani');
+			globalSkill = true;
+			//console.log('hello')
+		}
+	
+	},
+	offset : '100%'
+	})
+
+
+
+
